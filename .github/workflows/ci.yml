@@ -52,5 +52,8 @@ jobs:
       - name: Make mvnw executable
         run: chmod +x mvnw
 
+      - name: build with maven
+        run: mvn -B packages --file pom.xml
+
       - name: Run tests with Maven
         run: ./mvnw test
