@@ -39,9 +39,9 @@ public class UserRepositoryTest {
         assertThat(savedUser.getFullname()).isEqualTo("test name");
         assertThat(savedUser.getEmail()).isEqualTo("test@email.com");
         assertThat(savedUser.getUuid()).isEqualTo("123456");
-        assertThat(savedUser.getGender()).isEqualTo("male");
+        assertThat(savedUser.getGender()).isEqualTo("female");
         assertThat(savedUser.getDateofbirth()).isEqualTo(LocalDate.of(2004, 12, 6));
-        assertThat(savedUser.getPassword()).isEqualTo("securePassword123");
+        assertThat(savedUser.getPassword()).isEqualTo("securePassword1234");
 
     }
 
