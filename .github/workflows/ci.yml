@@ -49,5 +49,8 @@ jobs:
           echo "SPRING_DATASOURCE_USERNAME=smartuser" >> $GITHUB_ENV
           echo "SPRING_DATASOURCE_PASSWORD=smartpass" >> $GITHUB_ENV
 
+      - name: Make mvnw executable
+        run: chmod +x mvnw
+
       - name: Run tests with Maven
         run: ./mvnw test
