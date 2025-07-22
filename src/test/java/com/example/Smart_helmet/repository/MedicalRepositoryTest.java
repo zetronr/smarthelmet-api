@@ -62,6 +62,6 @@ public class MedicalRepositoryTest {
         assertThat(savedMedic).isNotNull();
         assertThat(savedMedic.getId()).isNotNull();
         assertThat(savedMedic.getUserInfo().getEmail()).isEqualTo("test@email.com");
-        assertThat(savedMedic.getBloodType()).isEqualTo("B+");
+        assertThat(savedMedic.getBloodType()).isEqualTo("A+");
     }
 }
