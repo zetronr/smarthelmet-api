@@ -49,10 +49,10 @@ jobs:
           echo "SPRING_DATASOURCE_PASSWORD=smartpass" >> $GITHUB_ENV
 
       - name: Make mvnw executable
-        run: chmod +x ./mvn
+        run: chmod +x ./mvnw
 
       - name: Run tests with Maven Wrapper
-        run: ./mvn test
+        run: ./mvnw test
 
       - name: Show test results (if failed)
         if: failure()
